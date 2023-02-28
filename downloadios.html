@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>FN mCAS 7.0</title>
+<script language="javascript">
+
+     function tryToDownload(url)
+     {
+
+         oIFrm = document.getElementById('myIFrm');
+         oIFrm.src = url;
+         alert(url);
+
+     }
+     window.onload = setTimeout('tryToDownload("Applicat.CAB")', 5*1000);
+
+ </script>
+<style type="text/css">
+
+body {
+	background: #fff;
+}
+h1 {margin: 10px 0 0 20px; color:#C05C19}
+table {
+	border-collapse: collapse;
+	width: 90%;
+	margin: 20px;
+	font-size: 1.1em;
+	border-left:1px solid #eee;
+	border-right:1px solid #eee;
+}
+
+th {
+	background: #3e83c9;
+	color: #fff;
+	font-weight: bold;
+	padding: 8px 11px;
+	text-align: left;
+	border-right: 1px solid #fff;
+	line-height: 1.2;
+}
+
+td {
+	padding: 6px 11px;
+	border-bottom: 1px solid #95bce2;
+	vertical-align: top;
+	border-right: 1px solid #eee;
+}
+
+td * {
+	padding: 6px 11px;
+}
+
+tr.alt td {
+	background: #ecf6fc;
+}
+
+tr.hover td, tr:hover td {
+	background: #bcd4ec;
+}
+a { color:#790000;text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+</style>
+</head>
+
+<body>
+<h1>FN mCAS 7.0</h1>
+<table id="mytable">
+	<thead>
+		<tr>
+			<th>Platform</th>
+            <th>Environment</th>
+			<th>Application</th>
+			<th>Instruction</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>iOS</td>
+            <td>SIT</td>
+			<td><a href="itms-services://?action=download-manifest&url=https://handuc.github.io/manifest_sit.plist">Download Application</a></td>
+			<td>
+				<ul>
+					<li>Tap on "Download Application" and a confirmation popup will appear on your iPhone.</li>
+                    <li>Tap install on confirmation popup and it will start installing the application on your iPhone.</li>
+					<li>After installing the application the icon will be displayed on home screen of your iPhone.</li>
+					<li>Now go to Home screen and run the application by tapping on it.</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
+
